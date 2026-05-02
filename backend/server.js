@@ -7,6 +7,9 @@ import { authMiddleware } from "./middleware/authMiddleware.js";
 import projectRoutes from "./routes/projectRoutes.js";
 import taskRoutes from "./routes/taskRoutes.js";
 import dashboardRoutes from "./routes/dashboardRoutes.js"
+import crypto from "crypto";
+global.crypto = crypto;
+
 dotenv.config();
 
 const app = express()
