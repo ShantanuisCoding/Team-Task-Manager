@@ -179,6 +179,58 @@ frontend/
 
 ---
 
+## 🚀 Deployment
+
+The application is deployed using Railway with separate services for backend and frontend.
+
+### Backend Deployment
+
+1. Push backend code to GitHub
+2. Create a new project on Railway
+3. Select "Deploy from GitHub repo"
+4. Set the following environment variables:
+
+```env
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+```
+
+5. Ensure start script in `package.json`:
+
+```bash
+npm start
+```
+
+---
+
+### Frontend Deployment
+
+1. Push frontend code to GitHub
+2. Create a new project on Railway
+3. Select frontend directory
+4. Add environment variable:
+
+```env
+VITE_API_URL=https://your-backend-url/api
+```
+
+5. Build and start commands:
+
+```bash
+npm install && npm run build
+npm run preview
+```
+
+---
+
+### Notes
+
+* Backend uses dynamic port (`process.env.PORT`)
+* Frontend communicates with backend using environment variables
+* CORS is enabled to allow frontend-backend interaction
+
+---
+
 ## 🎥 Demo Video
 
 (Attach your 2–5 minute demo video link here)
