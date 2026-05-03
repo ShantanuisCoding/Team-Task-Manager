@@ -233,7 +233,7 @@ npm run preview
 
 ## 🎥 Demo Video
 
-(Attach your 2–5 minute demo video link here)
+[Link](https://drive.google.com/file/d/1qacS6okhyaXYzQRliJC6ftHclb2FF5m5/view?usp=sharing)
 
 ---
 
